@@ -71,7 +71,7 @@ export default function Home() {
 
   const Mint = async () => {
     try {
-      const signer = web3Provider.getSigner();
+      const signer = await getProviderOrSigner(true);
 
       const testMintContract = new Contract(
         MINT_TEST_CONTRACT_ADDRESS,
