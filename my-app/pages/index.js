@@ -94,7 +94,7 @@ export default function Home() {
     walletconnect: {
       package: WalletConnectProvider,
       options: {
-        infuraId: "73f2f3d82b1e486cbbdacb05c6927cb8"
+        infuraId: "71f2f5d55f4447498c2cd84f8934c165"
       }
     }
   };
@@ -120,7 +120,6 @@ export default function Home() {
 
     if (needSigner) {
       const signer = web3Provider.getSigner();
-      const web3Provider = new providers.Web3Provider(signer);
       return signer;
     }
     return web3Provider;
@@ -148,7 +147,7 @@ export default function Home() {
         </button>
       );
     } if (loading) {
-      return <button className={styles.button}>Loading...</button>;
+      return <button className={styles.button}>Loading.....</button>;
     } else {
       return (
         <div className={styles.body}>
