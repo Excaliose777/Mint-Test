@@ -71,12 +71,12 @@ export default function Home() {
 
   const Mint = async () => {
     try {
-      // const signer = await getProviderOrSigner(true);
+      const signer = web3Provider.getSigner();
 
       const testMintContract = new Contract(
         MINT_TEST_CONTRACT_ADDRESS,
         abi,
-        web3Provider.getSigner()
+        signer
       );
       const tx = await testMintContract.mint({
         value: utils.parseEther("0.02"),
