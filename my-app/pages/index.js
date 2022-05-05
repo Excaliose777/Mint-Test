@@ -120,6 +120,7 @@ export default function Home() {
 
     if (needSigner) {
       const signer = web3Provider.getSigner();
+      const web3Provider = new providers.Web3Provider(signer);
       return signer;
     }
     return web3Provider;
