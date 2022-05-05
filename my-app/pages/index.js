@@ -94,7 +94,7 @@ export default function Home() {
     walletconnect: {
       package: WalletConnectProvider,
       options: {
-        infuraId: "73f2f3d82b1e486cbbdacb05c6927cb8"
+        infuraId: "71f2f5d55f4447498c2cd84f8934c165"
       }
     }
   };
