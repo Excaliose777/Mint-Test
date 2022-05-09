@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Web3Modal, { providers } from "web3modal";
+import Web3Modal from "web3modal";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import { Contract, providers, utils } from "ethers";
 import { abi, MINT_TEST_CONTRACT_ADDRESS } from "../constants";
